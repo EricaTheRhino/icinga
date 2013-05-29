@@ -1,1 +1,13 @@
 This folder contains configuration files for Icinga aswell as associated bespoke scripts and applications used by Icinga.
+
+To use the config folder remove /etc/icinga/objects and replace with a symlink.  E.g.
+
+ln -s /etc/icinga/objects /home/rhino/icinga/config 
+
+
+nrpe and check_nrpe are binaries for the NRPE server and plugin respectively they are build from the code downloaded at:
+
+https://github.com/KristianLyng/nrpe.git
+
+They were build to run on a Ubuntu 12.04 system with a x65_64 architecture.
+
